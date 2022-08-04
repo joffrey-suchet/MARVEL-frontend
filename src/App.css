@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+  font-family: sans-serif;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.background {
+  background-color: black;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header {
+  background-color: red;
   display: flex;
-  flex-direction: column;
   align-items: center;
+}
+
+header img {
+  height: 5rem;
+  margin: 0 3rem;
+}
+header div {
+  background-color: red;
+  width: 100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+button {
+  height: 2rem;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 3rem;
+  width: 10rem;
+  justify-content: center;
+  background-color: red;
+  border: solid black 2px;
+  border-radius: 5pc;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: rgba(255, 74, 74, 0.997);
+  border: solid gray 2px;
+  transition: all 0.3s ease-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  margin-top: 2rem;
+  height: 2rem;
+  width: 40rem;
+  border-radius: 5px;
+  border: solid 2px rgba(197, 193, 193, 0.781);
+}
+section {
+  background-color: black;
+  text-align: center;
+}
+
+.allCharacters {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+a {
+  text-decoration: none;
+}
+.character {
+  background-color: white;
+  margin-top: 3rem;
+  width: 18rem;
+  height: 30rem;
+  object-fit: cover;
+  border-radius: 30px;
+  border: solid red 2px;
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+.character:hover {
+  background-color: red;
+  transition: all 0.3s ease-out;
+}
+
+.character img {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+  border-radius: 30px;
+  border: solid red 2px;
 }
